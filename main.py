@@ -40,12 +40,12 @@ def main():
         for li in soup.findAll('li', {'class': 'RefList-item'}):
             tag = li.findChildren('a', recursive=False)[0]['href'].split('/')[-1]
             tag_list.append(tag)
-        matching = [s for s in tag_list if 'android-12' in s or 'android12' in s]
+        matching = [s for s in tag_list if 'android-14' in s or 'android14' in s]
         if len(matching) > 0:
-            print('[!] ANDROID 12 IS HERE!')
+            print('[!] ANDROID 14 IS HERE!')
             print('[!] Result: {}'.format(matching))
         else:
-            print('[*] No Android 12 (yet) 😕')
+            print('[*] No Android 14 (yet) 😕')
             print('[*] Sleep time! 😴')
             time.sleep(10 * 60)  # Wait for 10 minutes
     try:
