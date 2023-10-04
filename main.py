@@ -47,7 +47,7 @@ def main():
         else:
             print('[*] No Android 14 (yet) 😕')
             print('[*] Sleep time! 😴')
-            time.sleep(10 * 60)  # Wait for 10 minutes
+            time.sleep(30 * 60)  # Wait for 10 minutes
     try:
         from subprocess import DEVNULL
     except ImportError:
